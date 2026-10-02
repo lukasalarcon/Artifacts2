@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+  "title": "Google Chrome (Enterprise MSI)",
+  "publisher": "lukasalarcon",
+  "description": "Downloads the latest stable Google Chrome Enterprise 64-bit MSI directly from Google, verifies its digital signature, and installs it silently for all users.",
+  "tags": [
+    "Windows",
+    "Chrome",
+    "Google",
+    "Browser"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/Artifacts/windows-chrome/Google_Chrome_icon.png",
+  "targetOsType": "Windows",
+  "runCommand": {
+    "commandToExecute": "powershell.exe -ExecutionPolicy bypass \"& ./install-chrome.ps1\""
+  }
+}
